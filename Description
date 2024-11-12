@@ -1,0 +1,22 @@
+Key Features:
+Loading Existing Data: When the program starts, it tries to read from a file named bookingsList.txt, which contains saved booking information. If the file is not found, it initializes an empty list for bookings.
+
+Main Menu: The user interacts with the program through a menu offering the following choices:
+
+Add a Booking: The user can input details such as passenger name, booking ID, destination, and seat number to create a new booking.
+Get Booking Information: The user can search for a booking by passenger name. The search is case-insensitive, and the program will display all bookings matching the name.
+Display All Bookings: The program will show a list of all bookings currently in the system, displaying passenger name, booking ID, destination, and seat number.
+Delete a Booking: The user can remove a booking by entering the passenger's name. The program will search for the name and delete the corresponding booking if found.
+Quit: The program will terminate the session.
+Data Storage: After the user quits, the system saves all bookings back to the bookingsList.txt file, ensuring persistence for future use.
+
+Error Handling: The program includes error handling for situations like:
+
+File not found (FileNotFoundError).
+Invalid input for menu choices (ValueError when the user enters a non-numeric value).
+File Structure:
+bookingsList.txt: The file stores the booking data in CSV (comma-separated values) format, with each line containing a booking’s details.
+Example Workflow:
+The program starts and loads any existing bookings from the bookingsList.txt file.
+The user interacts with the menu and makes various choices like adding or viewing bookings.
+After exiting the program, the latest bookings are saved back to the file.
